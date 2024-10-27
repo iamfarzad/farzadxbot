@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-card {
+    @apply bg-gray-900/40 backdrop-blur-lg border border-gray-700/50;
+  }
+
+  .glass-button {
+    @apply bg-gray-800/40 backdrop-blur-lg border border-gray-700/50 hover:bg-gray-700/40 transition-all duration-200;
+  }
+
+  .neon-glow {
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5),
+                 0 0 20px rgba(59, 130, 246, 0.3),
+                 0 0 30px rgba(59, 130, 246, 0.2);
+  }
+}
+
+body {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen text-white;
+  background-size: 200% 200%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
