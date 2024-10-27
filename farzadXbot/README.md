@@ -1,6 +1,6 @@
-# AI Twitter Bot
+# X-bot
 
-An advanced AI-powered Twitter bot with real-time analytics, smart scheduling, and content optimization.
+An advanced AI-powered X bot with real-time analytics, smart scheduling, and content optimization.
 
 ## Features
 
